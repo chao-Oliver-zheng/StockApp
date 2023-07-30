@@ -8,10 +8,12 @@
 import SwiftUI
 
 struct SearchView: View {
+    
     @ObservedObject var viewModel: StockServerMode
     @Binding var textValue: String
     @Binding var screenCover: Bool
     @Binding var path: NavigationPath
+    
     var body: some View {
         NavigationStack{
             ZStack{
@@ -88,32 +90,28 @@ struct SearchView: View {
                                     }
                         }
                     }
-                    
                 }
                 .background(Color.black)
             }
-            }
-           
         }
+        
+    }
 }
 
 struct SearchBarTextField: View {
+    
     @Binding var searchText: String
     @State private var isEditing = false
-
+    
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 10)
                 .foregroundColor(Color.gray.opacity(0.2))
                 .frame(height: 36)
-               
-                
-
             HStack {
                 Image(systemName: "magnifyingglass")
                     .foregroundColor(.gray)
                     .padding(.leading, 8)
-
                 TextField("Search", text: $searchText)
                     .padding(7)
                     .padding(.leading, -7)
@@ -121,7 +119,6 @@ struct SearchBarTextField: View {
                     .onTapGesture {
                         isEditing = true
                     }
-
                 if isEditing {
                     Button(action: {
                         searchText = ""

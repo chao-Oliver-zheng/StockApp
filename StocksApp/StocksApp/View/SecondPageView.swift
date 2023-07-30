@@ -66,8 +66,5 @@ struct SecondPageView: View {
         }else{
             self.total = 0
         }
-        
     }
-    
-    
 }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		64BA50242A76092F008C9A03 /* getStockAppSuccess.json in Resources */ = {isa = PBXBuildFile; fileRef = 64BA50232A76092F008C9A03 /* getStockAppSuccess.json */; };
+		64BA50262A760944008C9A03 /* getStockAppFail.json in Resources */ = {isa = PBXBuildFile; fileRef = 64BA50252A760944008C9A03 /* getStockAppFail.json */; };
 		64EC301C2A75A693006B654B /* StocksAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EC301B2A75A693006B654B /* StocksAppApp.swift */; };
 		64EC301E2A75A693006B654B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EC301D2A75A693006B654B /* ContentView.swift */; };
 		64EC30202A75A696006B654B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64EC301F2A75A696006B654B /* Assets.xcassets */; };
@@ -46,6 +48,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		64BA50232A76092F008C9A03 /* getStockAppSuccess.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = getStockAppSuccess.json; sourceTree = "<group>"; };
+		64BA50252A760944008C9A03 /* getStockAppFail.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = getStockAppFail.json; sourceTree = "<group>"; };
 		64EC30182A75A693006B654B /* StocksApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StocksApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64EC301B2A75A693006B654B /* StocksAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksAppApp.swift; sourceTree = "<group>"; };
 		64EC301D2A75A693006B654B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -142,6 +146,8 @@
 			isa = PBXGroup;
 			children = (
 				64EC302C2A75A697006B654B /* StocksAppTests.swift */,
+				64BA50232A76092F008C9A03 /* getStockAppSuccess.json */,
+				64BA50252A760944008C9A03 /* getStockAppFail.json */,
 			);
 			path = StocksAppTests;
 			sourceTree = "<group>";
@@ -316,6 +322,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64BA50242A76092F008C9A03 /* getStockAppSuccess.json in Resources */,
+				64BA50262A760944008C9A03 /* getStockAppFail.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

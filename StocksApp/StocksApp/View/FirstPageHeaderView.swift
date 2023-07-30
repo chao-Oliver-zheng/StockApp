@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct FirstPageHeaderView: View {
+    
     @Binding var screenCover: Bool
     @Binding var isTextFieldVisible: Bool
     @Binding var textValue: String
@@ -26,7 +27,6 @@ struct FirstPageHeaderView: View {
                             .resizable()
                             .foregroundColor(.white)
                             .frame(width: 40, height: 40 )
-                        
                     }
                     Spacer()
                     if isTextFieldVisible {
@@ -41,7 +41,6 @@ struct FirstPageHeaderView: View {
                     Spacer()
                     Button(action: {
                         screenCover = true
-                        
                     })
                     {
                         Image(systemName: "magnifyingglass")
@@ -51,18 +50,16 @@ struct FirstPageHeaderView: View {
                     }
                 }
                 .fullScreenCover(isPresented: $screenCover) {
-                           SearchView(viewModel: viewModel, textValue: $textValue, screenCover: $screenCover, path: $path)
-                            .background(.black)
-                        }
+                    SearchView(viewModel: viewModel, textValue: $textValue, screenCover: $screenCover, path: $path)
+                        .background(.black)
+                }
             }
             .padding(.horizontal)
         }
-      
-       
-        
     }
 }
 struct CustomSearchTextField: View {
+    
     @Binding var searchText: String
     
     var body: some View {
@@ -70,10 +67,8 @@ struct CustomSearchTextField: View {
             Image(systemName: "magnifyingglass")
                 .foregroundColor(.gray)
                 .padding(.leading, 8)
-            
             TextField("Search", text: $searchText)
                 .padding(.vertical, 10)
-            
             if !searchText.isEmpty {
                 Button(action: {
                     searchText = ""
@@ -88,8 +83,3 @@ struct CustomSearchTextField: View {
         .cornerRadius(8)
     }
 }
-//struct FirstPageHeaderView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        FirstPageHeaderView()
-//    }
-//}
